@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/4274013.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.container {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #ffffffb7;
+    box-shadow: 2px 0px 8px 5px rgba(65, 65, 65, 0.562);
+    transition: 0.5s linear;
+    margin: 0px auto;
+}
+
+.header-text {
+    text-align: center;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+
+.todo-input-field {
+    width: 90%;
+    height: 5vh;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    word-spacing: 2px;
+}
+.todo-input-field:focus {
+    border-color: rgba(52, 53, 51, 0.562);
+    box-shadow: 0px 0px 4px 1px rgba(52, 53, 51, 0.562);
+}
+.todo-button {
+    text-align: center;
+    padding: 5px;
+}
+.btn {
+    width: 150px;
+    height: 4.5vh;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    margin-bottom: 5px;
+    background-color: #4834d4;
+    transition: 0.4s linear;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background-color: #686de0;
+}
+
+.todo-list {
+   width: 100%; 
+}
+.todo-list-header {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.todo-content {
+    align-items: center;
+    width: 98%;
+    height: 5vh;
+    border-radius: 7px;
+    background-color: red
+}
+
+.text{
+    border: 2px solid #f9ca24;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    border-radius: 10px;
+    color: white;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    
+    background-color: rgba(27, 26, 26, 0.842)
+}
+.btns {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.delete {
+    color: #eb4d4b;
+}
+.edit {
+    color: #01fd4d;
+}
+@media (max-width: 375px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (min-width: 400px) {
+    .container {
+        width: 90%;
+    }
+    .todo-input-field {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 620px) {
+    .container {
+        width: 90%;
+    }
+    .todo-input-field {
+        margin-left: 25px;
+    }
+}
